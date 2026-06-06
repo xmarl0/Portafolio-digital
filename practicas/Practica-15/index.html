@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Música Pop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .hero {
+            background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+            url('https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f');
+            background-size: cover;
+            background-position: center;
+            height: 90vh;
+            color: white;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+
+        .section-title {
+            margin-bottom: 30px;
+            color: #e91e63;
+            font-weight: bold;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+            transition: 0.3s;
+        }
+
+        footer {
+            background: #212529;
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Pop Music</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#descripcion">Descripción</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#historia">Historia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#artistas">Artistas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#top">Top 10</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <h1 class="display-3 fw-bold">Música Pop</h1>
+        <p class="lead">
+            El género musical más popular e influyente del mundo.
+        </p>
+        <a href="#descripcion" class="btn btn-primary btn-lg">
+            Conocer más
+        </a>
+    </div>
+</section>
+
+<!-- Descripción -->
+<section id="descripcion" class="py-5">
+    <div class="container">
+        <h2 class="section-title text-center">Descripción</h2>
+
+        <p class="text-center">
+            La música pop es un género caracterizado por sus melodías
+            pegadizas, letras sencillas y gran aceptación comercial.
+            Surgió como una evolución de distintos estilos musicales y
+            actualmente es uno de los géneros más escuchados en todo el mundo.
+        </p>
+    </div>
+</section>
+
+<!-- Historia -->
+<section id="historia" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="section-title text-center">Historia del Género</h2>
+
+        <p>
+            El pop comenzó a desarrollarse durante las décadas de 1950 y 1960,
+            influenciado por el rock and roll. Con el paso de los años,
+            incorporó elementos de diferentes estilos como el dance,
+            electrónica, R&B y hip-hop.
+        </p>
+
+        <p>
+            Artistas como Michael Jackson, Madonna y más recientemente
+            Taylor Swift y Dua Lipa han contribuido a la evolución y
+            popularidad del género.
+        </p>
+    </div>
+</section>
+
+<!-- Artistas -->
+<section id="artistas" class="py-5">
+    <div class="container">
+        <h2 class="section-title text-center">Artistas y Bandas Destacadas</h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="assets/img/Michael-jackson.webp" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Michael Jackson</h5>
+                        <p>Conocido como el Rey del Pop.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="assets/img/TS.webp" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Taylor Swift</h5>
+                        <p>Una de las artistas más exitosas de la actualidad.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="assets/img/dualipa.jpeg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Dua Lipa</h5>
+                        <p>Figura destacada del pop moderno.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!--Top 10-->
+<section id="top" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="section-title text-center">Top 10 Canciones Pop</h2>
+
+        <div class="table-responsive">
+            <table class="table table-striped table-hover">
+                <thead class="table-dark">
+                    <tr>
+                        <th>#</th>
+                        <th>Canción</th>
+                        <th>Artista</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>Billie Jean</td><td>Michael Jackson</td></tr>
+                    <tr><td>2</td><td>Like a Prayer</td><td>Madonna</td></tr>
+                    <tr><td>3</td><td>SPoker face</td><td>Lady Gaga</td></tr>
+                    <tr><td>4</td><td>Levitating</td><td>Dua Lipa</td></tr>
+                    <tr><td>5</td><td>Blinding Lights</td><td>The Weeknd</td></tr>
+                    <tr><td>6</td><td>Firework</td><td>Katy Perry</td></tr>
+                    <tr><td>7</td><td>Rolling in the Deep</td><td>Adele</td></tr>
+                    <tr><td>8</td><td>Shape of you</td><td>Ed Sheeran</td></tr>
+                    <tr><td>9</td><td>baby</td><td>Justin Bieber</td></tr>
+                    <tr><td>10</td><td>As It Was</td><td>Harry Styles</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center">
+    <div class="container">
+        <p class="mb-0">
+            © 2025 Música Pop | Página desarrollada con Bootstrap 5
+        </p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
